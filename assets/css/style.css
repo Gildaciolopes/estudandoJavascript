@@ -16,6 +16,17 @@ body {
   font-size: 1.3em;
   line-height: 1.5em;
 }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
 .container {
   max-width: 64rem;
   margin: 5rem auto;
