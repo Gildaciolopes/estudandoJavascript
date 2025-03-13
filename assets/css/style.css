@@ -1,27 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap");
+:root {
+  --primary-color: #3498db;
+  --primary-color-darker: hsl(207, 90%, 40%);
+  --secondary-color: #2ecc71;
+}
 * {
+  box-sizing: border-box;
+  outline: 0;
+}
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: var(--primary-color);
+  font-family: "Open sans", sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
 }
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 5px;
-  & .formulario {
-    padding: 5px;
-    & p {
-      padding: 5px;
-      & input {
-        border-radius: 5px;
-      }
-    }
-    & button {
-      width: 90px;
-      height: 40px;
-      margin-top: 5px;
-      border-radius: 5px;
-    }
-  }
+.container {
+  max-width: 64rem;
+  margin: 5rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+form input {
+  font-size: 2.4rem;
+  height: 5rem;
+  padding: 0 20px;
+}
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 5rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+form button:hover {
+  background: var(--primary-color-darker);
 }
