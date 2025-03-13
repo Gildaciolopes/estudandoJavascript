@@ -41,23 +41,20 @@
       </table>
 
       <h2>Calcule seu IMC</h2>
-      <!--
-      <form action="">
-        <label for="input-teste-1">Label teste #1</label>
-        <input type="text" id="input-teste-1" />
+      <form id="imcForm">
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" step="0.1" required />
 
-        <label for="input-teste-2">Label teste #2</label>
-        <input type="password" id="input-teste-2" />
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" step="0.01" required />
 
-        <label for="input-teste-3">Label teste #3</label>
-        <input type="number" id="input-teste-3" />
+        <div class="resultado">
+          <p id="imcResultado" style="display: none"></p>
+        </div>
 
-        <label for="input-teste-4">Label teste #4</label>
-        <input type="email" id="input-teste-4" />
-
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
       </form>
-    --></section>
+    </section>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
