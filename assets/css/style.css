@@ -45,6 +45,7 @@ form input {
   font-size: 2.4rem;
   height: 5rem;
   padding: 0 20px;
+  border-radius: 10px;
 }
 form input:focus {
   outline: 1px solid var(--primary-color);
@@ -58,6 +59,7 @@ form button {
   height: 5rem;
   cursor: pointer;
   margin-top: 3rem;
+  border-radius: 10px;
 }
 form button:hover {
   background: var(--primary-color-darker);
