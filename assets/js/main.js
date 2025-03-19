@@ -19,6 +19,14 @@ function clearInput() {
   inputTarefa.focus();
 }
 
+function createDeleteButton(li) {
+  li.innerText += " ";
+  const btnDelete = document.createElement("button");
+  btnDelete.innerText = "Apagar";
+  btnDelete.setAttribute("class", "apagar");
+  li.appendChild(btnDelete);
+}
+
 function createTarefa(textoTarefa) {
   const li = createLi();
   li.innerText = textoTarefa;
@@ -31,4 +39,12 @@ function createTarefa(textoTarefa) {
 btnTarefa.addEventListener("click", function () {
   if (!inputTarefa.value) return;
   createTarefa(inputTarefa.value);
+});
+
+document.addEventListener("click", function (e) {
+  const el = e.target;
+  if (el.classList.contains("apagar")) {
+    el.parentElement.remove();
+    saveTarefas();
+  }
 });
